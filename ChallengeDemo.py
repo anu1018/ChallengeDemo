@@ -26,12 +26,10 @@ def links(var):
           print("InvalidSchema")
 
 
-links("//*[@id='__next']/div/div[2]/footer/div/div[1]/div[2]/div[3]")#resources
-links("//*[@id='__next']/div/div[2]/footer/div/div[1]/div[2]/div[2]")#company
-links("//*[@id='__next']/div/div[2]/footer/div/div[1]/div[2]/div[1]")#prosucts&services
-links("//*[@id='__next']/div/div[2]/footer/div/div[1]/div[2]/div[4]")#Connect
-#footer_company = driver.find_element(By.XPATH, "//*[@id='__next']/div/div[2]/footer/div/div[1]/div[2]/div[2]").find_elements(By.CSS_SELECTOR,"a")
-
+links("//*[@id='__next']/div/div[2]/footer/div/div[1]/div[2]/div[3]")  # resources
+links("//*[@id='__next']/div/div[2]/footer/div/div[1]/div[2]/div[2]") # company
+links("//*[@id='__next']/div/div[2]/footer/div/div[1]/div[2]/div[1]") # products&services
+links("//*[@id='__next']/div/div[2]/footer/div/div[1]/div[2]/div[4]") # Connect
 
 time.sleep(5)
 driver.quit()
